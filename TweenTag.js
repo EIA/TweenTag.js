@@ -56,13 +56,6 @@ TweenTag.prototype = {
 	},
 
 	/*
-	 * reverse tag array
-	 */
-	reverse: function() {
-		return this.tTags.reverse();
-	},
-
-	/*
 	 * range: 0-1;
 	 */
 	push: function($tagPercent) {
