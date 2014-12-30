@@ -56,7 +56,7 @@ TweenTag.prototype = {
 	},
 
 	/*
-	 * shift tag array
+	 * reverse tag array
 	 */
 	reverse: function() {
 		return this.tTags.reverse();
