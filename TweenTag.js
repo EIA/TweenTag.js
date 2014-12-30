@@ -3,7 +3,7 @@
  *
  * for feature requests or bugs, please visit https://github.com/EIA/TweenTag.js
  *
- * licensed under the MIT license 
+ * licensed under the MIT license
  */
 
 
@@ -56,6 +56,13 @@ TweenTag.prototype = {
 	},
 
 	/*
+	 * shift tag array
+	 */
+	reverse: function() {
+		return this.tTags.reverse();
+	},
+
+	/*
 	 * range: 0-1;
 	 */
 	push: function($tagPercent) {
@@ -84,11 +91,11 @@ TweenTag.prototype = {
 	addCallback: function(name, callback) {
         this.callbacks[name] = callback;
     },
-    
+
     removeCallback: function(name) {
         delete this.callbacks[name];
     },
-    
+
     dispatchEvent: function(name, args) {
     	//console.log("dispatchEvent > "+name);
         var callback = this.callbacks[name];
